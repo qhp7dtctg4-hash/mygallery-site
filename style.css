@@ -48,13 +48,14 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .hero { background: radial-gradient(120% 80% at 50% 0%, #1d232b 0%, var(--night) 60%); color: #fff; overflow: hidden; }
 .hero .wrap { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 40px; align-items: center; padding-block: 72px 0; }
 .hero-copy { padding-bottom: 72px; }
+.hero-icon { width: 112px; height: 112px; border-radius: 26px; margin-bottom: 28px; box-shadow: 0 0 0 1px #ffffff26, 0 18px 50px #2cc4b133, 0 10px 30px #00000099; }
 .eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: 0.85rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--mint); margin: 0 0 18px; }
 .hero h1 { font-size: clamp(2.4rem, 6vw, 4.2rem); line-height: 1.04; letter-spacing: -0.035em; margin: 0 0 22px; }
 .hero h1 em { font-style: normal; color: var(--gold); }
 .hero .lead { font-size: clamp(1.05rem, 2.2vw, 1.2rem); color: #ffffffc4; max-width: 34em; margin: 0 0 30px; }
 .cta-row { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
 .store-badge { display: inline-flex; align-items: center; gap: 12px; padding: 10px 20px 10px 16px; border-radius: 14px; background: #fff; color: var(--night); text-decoration: none; min-height: 56px; }
-.store-badge svg { width: 26px; height: 26px; flex: none; }
+.store-badge img { width: 40px; height: 40px; border-radius: 10px; flex: none; }
 .store-badge small { display: block; font-size: 0.72rem; font-weight: 600; color: #5b6876; line-height: 1.1; }
 .store-badge strong { display: block; font-size: 1.1rem; line-height: 1.2; }
 .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 26px; padding: 0; list-style: none; }
@@ -138,6 +139,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 @media (max-width: 820px) {
   .hero .wrap { grid-template-columns: 1fr; padding-top: 48px; gap: 8px; }
   .hero-copy { padding-bottom: 24px; }
+  .hero-icon { width: 88px; height: 88px; border-radius: 20px; margin-bottom: 22px; }
   .hero-visual { height: 420px; }
   .hero-visual .phone { width: min(250px, 70vw); }
   .section { padding-block: 92px 56px; }

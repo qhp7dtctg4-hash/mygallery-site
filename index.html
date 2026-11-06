@@ -4,18 +4,153 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>MyGallery</title>
-  <meta name="description" content="MyGallery — araba galerisi işletme oyunu / car dealership game.">
+  <meta name="description" content="MyGallery — iPhone için araba galerisi oyunu. Al, pazarlık yap, sat. / A car dealership game for iPhone.">
+  <meta name="theme-color" content="#0b0d10">
+  <meta property="og:title" content="MyGallery">
+  <meta property="og:description" content="Küçük bir galeri. Büyük pazarlıklar. / Small showroom. Big deals.">
+  <meta property="og:image" content="img/icon-512.png">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
   <link rel="stylesheet" href="style.css">
   <script src="site.js" defer></script>
 </head>
 <body>
-  <header><a class="brand" data-page href="index.html">MyGallery<span aria-hidden="true"> ●</span></a>
-    <div class="languages" role="group" aria-label="Dil / Language">
-      <button type="button" data-select-lang="tr" lang="tr">Türkçe</button>
-      <button type="button" data-select-lang="en" lang="en">English</button>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" data-page href="index.html"><img src="img/favicon.png" alt="" width="36" height="36">MyGallery</a>
+      <nav class="site-nav" aria-label="Sayfalar / Pages">
+        <a data-page href="index.html" aria-current="page"><span data-lang="tr">Ana sayfa</span><span data-lang="en">Home</span></a>
+        <a data-page href="privacy.html"><span data-lang="tr">Gizlilik</span><span data-lang="en">Privacy</span></a>
+        <a data-page href="support.html"><span data-lang="tr">Destek</span><span data-lang="en">Support</span></a>
+      </nav>
+      <div class="languages" role="group" aria-label="Dil / Language">
+        <button type="button" data-select-lang="tr" lang="tr">TR</button>
+        <button type="button" data-select-lang="en" lang="en">EN</button>
+      </div>
     </div>
   </header>
-  <main><section lang="tr" data-lang="tr"><nav aria-label="Sayfalar"><a data-page href="index.html">Ana sayfa</a><a data-page href="privacy.html">Gizlilik Politikası</a><a data-page href="support.html">Destek</a></nav><p class="eyebrow">iPhone için galeri macerası</p><h1>Küçük bir galeri.<br>Büyük pazarlıklar.</h1><p class="lead">Arabaları keşfet, tamir et, müşterilerle pazarlık yap ve kendi galerini büyüt. MyGallery’de her arabanın bir hikâyesi, her müşterinin bir son teklifi var.</p><div class="card"><h2>Oyun senin, kararlar senin.</h2><p>Türkçe ve İngilizce oyna. Kayıtların cihazında kalsın. Reklam ve takip olmadan galerine odaklan.</p></div></section><section lang="en" data-lang="en"><nav aria-label="Pages"><a data-page href="index.html">Home</a><a data-page href="privacy.html">Privacy Policy</a><a data-page href="support.html">Support</a></nav><p class="eyebrow">Your dealership adventure on iPhone</p><h1>Small showroom.<br>Big negotiations.</h1><p class="lead">Find cars, fix them up, haggle with customers and grow your own dealership. In MyGallery, every car has a story and every customer has one last offer.</p><div class="card"><h2>Your showroom. Your call.</h2><p>Play in Turkish or English. Keep your saves on your device. Focus on the next deal, with no ads or tracking.</p></div></section></main>
-  <footer>MyGallery</footer>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero-copy">
+          <p class="eyebrow"><span data-lang="tr">iPhone için galeri oyunu</span><span data-lang="en">A dealership game for iPhone</span></p>
+          <h1>
+            <span data-lang="tr">Küçük bir galeri.<br><em>Büyük pazarlıklar.</em></span>
+            <span data-lang="en">Small showroom.<br><em>Big deals.</em></span>
+          </h1>
+          <p class="lead">
+            <span data-lang="tr">İlanlardan araba bul, ucuza kap, müşteriyle kıyasıya pazarlık et ve sokak arası galerini şehrin en ünlü bayisine dönüştür. Her arabanın bir hikâyesi, her müşterinin bir son teklifi var.</span>
+            <span data-lang="en">Hunt the listings, snap up a bargain, haggle hard with every customer and grow your corner lot into the city's top dealership. Every car has a story, every customer has one last offer.</span>
+          </p>
+          <div class="cta-row">
+            <span class="store-badge">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.4 12.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9-.7 0-1.8-.8-3-.8-1.5 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.3.9-1.3 1.3-2.6 1.3-2.6s-2.5-1-2.5-3.8zM14.2 5.8c.6-.8 1.1-1.8 1-2.8-.9 0-2 .6-2.7 1.4-.6.7-1.1 1.7-1 2.7 1 .1 2-.5 2.7-1.3z"/></svg>
+              <span><small><span data-lang="tr">Çok yakında</span><span data-lang="en">Coming soon to the</span></small><strong>App Store</strong></span>
+            </span>
+          </div>
+          <ul class="chips">
+            <li><span data-lang="tr">Reklamsız</span><span data-lang="en">No ads</span></li>
+            <li><span data-lang="tr">Takip yok</span><span data-lang="en">No tracking</span></li>
+            <li><span data-lang="tr">İnternetsiz oynanır</span><span data-lang="en">Plays offline</span></li>
+            <li>Türkçe · English</li>
+          </ul>
+        </div>
+        <div class="hero-visual">
+          <div class="phone">
+            <img data-lang="tr" src="img/tr-01-gallery.jpg" alt="Galerinin kuşbakışı görünümü: park yerlerinde fiyat etiketli arabalar" width="540" height="1173">
+            <img data-lang="en" src="img/en-01-gallery.jpg" alt="Bird's-eye view of the dealership with price-tagged cars in their bays" width="540" height="1173">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker"><span data-lang="tr">Oyunda neler var?</span><span data-lang="en">What's inside</span></p>
+          <h2><span data-lang="tr">Al, pazarlık et, sat. Sonra bir daha.</span><span data-lang="en">Buy, haggle, sell. Then do it again.</span></h2>
+          <p><span data-lang="tr">Tek parmakla oynanır; karakter yönetmek yok, sadece senin ticari zekân var.</span><span data-lang="en">One-thumb play. No character to steer, just your nose for a good deal.</span></p>
+        </div>
+        <div class="features">
+          <article class="feature">
+            <div class="feature-shot"><div class="phone">
+              <img data-lang="tr" src="img/tr-02-bargain.jpg" alt="Pazarlık ekranı" loading="lazy" width="540" height="1173">
+              <img data-lang="en" src="img/en-02-bargain.jpg" alt="Haggling screen" loading="lazy" width="540" height="1173">
+            </div></div>
+            <div class="feature-body">
+              <h3><span data-lang="tr">Kıyasıya pazarlık</span><span data-lang="en">Haggle like a pro</span></h3>
+              <p><span data-lang="tr">Her müşterinin sabrı ve huyu farklı. Teklifini ver, kozunu oyna, kârını cebe at.</span><span data-lang="en">Every customer has their own temper. Make your offer, play your card, pocket the profit.</span></p>
+            </div>
+          </article>
+          <article class="feature">
+            <div class="feature-shot"><div class="phone">
+              <img data-lang="tr" src="img/tr-03-legend.jpg" alt="Hurdacı Cemal'in efsane arabası" loading="lazy" width="540" height="1173">
+              <img data-lang="en" src="img/en-03-legend.jpg" alt="A legendary car at the junkyard" loading="lazy" width="540" height="1173">
+            </div></div>
+            <div class="feature-body">
+              <h3><span data-lang="tr">Hurdalıktaki efsaneler</span><span data-lang="en">Legends in the junkyard</span></h3>
+              <p><span data-lang="tr">Hurdacı Cemal'in arka bahçesinde unutulmuş efsaneler var. Kurtar, restore et, servet kazan.</span><span data-lang="en">Forgotten legends rust in the junk dealer's yard. Rescue one, restore it, make a fortune.</span></p>
+            </div>
+          </article>
+          <article class="feature">
+            <div class="feature-shot"><div class="phone">
+              <img data-lang="tr" src="img/tr-04-phone.jpg" alt="Oyun içi telefon" loading="lazy" width="540" height="1173">
+              <img data-lang="en" src="img/en-04-phone.jpg" alt="In-game phone" loading="lazy" width="540" height="1173">
+            </div></div>
+            <div class="feature-body">
+              <h3><span data-lang="tr">İşler cebinde</span><span data-lang="en">Business in your pocket</span></h3>
+              <p><span data-lang="tr">İlan sitesi, banka, mesajlar, mahalle postası… Galerinin bütün işi tek bir telefonda.</span><span data-lang="en">Listings, bank, messages, local news… your whole business on one phone.</span></p>
+            </div>
+          </article>
+          <article class="feature">
+            <div class="feature-shot"><div class="phone">
+              <img data-lang="tr" src="img/tr-05-night.jpg" alt="Gece bekçisiyle galeri" loading="lazy" width="540" height="1173">
+              <img data-lang="en" src="img/en-05-night.jpg" alt="The lot at night with a guard" loading="lazy" width="540" height="1173">
+            </div></div>
+            <div class="feature-body">
+              <h3><span data-lang="tr">Gece de iş var</span><span data-lang="en">The night shift</span></h3>
+              <p><span data-lang="tr">Gün biter, ışıklar yanar. Galerini koru, bekçi tut, sabah raporunu bekle.</span><span data-lang="en">The day ends, the lamps come on. Guard your lot, hire a watchman, wait for the morning report.</span></p>
+            </div>
+          </article>
+          <article class="feature">
+            <div class="feature-shot"><div class="phone">
+              <img data-lang="tr" src="img/tr-06-sale.jpg" alt="Satış anı fotoğrafı" loading="lazy" width="540" height="1173">
+              <img data-lang="en" src="img/en-06-sale.jpg" alt="Sale snapshot" loading="lazy" width="540" height="1173">
+            </div></div>
+            <div class="feature-body">
+              <h3><span data-lang="tr">Hayırlı olsun!</span><span data-lang="en">Enjoy the ride!</span></h3>
+              <p><span data-lang="tr">Her satış bir anı fotoğrafıyla albümüne girer. Sattığın arabaları ve kârını hiç unutma.</span><span data-lang="en">Every sale lands in your album as a snapshot. Never forget a car, or the profit it made.</span></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <div class="promise">
+        <img src="img/icon-512.png" alt="MyGallery" width="96" height="96" loading="lazy">
+        <div>
+          <h2><span data-lang="tr">Oyun senin, verilerin de senin.</span><span data-lang="en">Your game. Your data.</span></h2>
+          <p>
+            <span data-lang="tr">MyGallery hiçbir kişisel veri toplamaz; reklam ve takip yoktur. Kayıtların yalnızca kendi telefonunda durur. <a data-page href="privacy.html">Gizlilik politikası</a></span>
+            <span data-lang="en">MyGallery collects no personal data and has no ads or tracking. Your saves stay on your own phone. <a data-page href="privacy.html">Privacy policy</a></span>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <a class="brand" data-page href="index.html"><img src="img/favicon.png" alt="" width="28" height="28">MyGallery</a>
+      <nav class="footer-links" aria-label="Alt bağlantılar / Footer">
+        <a data-page href="privacy.html"><span data-lang="tr">Gizlilik Politikası</span><span data-lang="en">Privacy Policy</span></a>
+        <a data-page href="support.html"><span data-lang="tr">Destek</span><span data-lang="en">Support</span></a>
+        <a href="mailto:atacannacar@icloud.com">atacannacar@icloud.com</a>
+      </nav>
+      <span>© 2026 MyGallery</span>
+    </div>
+  </footer>
 </body>
 </html>
